@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Password Generator</title>
+    <script type="text/javascript" src="G:\NS projects\New folder\KD_JS\Hangman\Code generator\script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+      <div class="password-generator">
+        <h2>Password Generator</h2>
+        <h6>Just in case you ran out of names of your loved ones for secure password </h6>
+        <div class="password">
+          <p id="passwordBox"></p><i onclick="copyPassword()">COPY</i></i>
+        </div>
+        <div>
+          <label for="length">Length</label>
+          <input type="number" id="length" min="6" max="20" value="6">
+        </div>
+        <div>
+          <label for="symbol">Include Symbol</label>
+          <input type="checkbox" id="symbol" checked>
+        </div>
+        <div>
+          <label for="num">Include Number</label>
+          <input type="checkbox" id="num" checked>
+        </div>
+        <div>
+          <label for="lowercase">Include lowerCase</label>
+          <input type="checkbox" id="lowercase" checked>
+        </div>
+        <div>
+          <label for="uppercase">Include upperCase</label>
+          <input type="checkbox" id="uppercase" checked>
+        </div>
+        <button onclick="createPassword()">Get Random Password</button>
+      </div>
+    </div>
+  </body>
+</html>
